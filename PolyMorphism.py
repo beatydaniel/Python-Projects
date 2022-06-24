@@ -1,10 +1,10 @@
- #Parent Class User
-class User:
-    #Define the attributes of the class
-    name = "Mark"
-    email = "mark@gmail.com"
-    password = "1234abcd"
 
+#Parent Class
+class User:
+    name = ""
+    email = ""
+    password = ""
+#Parent Class Method
     def getLoginInfo(self):
         entry_name = input("Enter your name: ")
         entry_email = input("Enter your email: ")
@@ -13,27 +13,39 @@ class User:
             print("Welcome back, {}".format(entry_name))
         else:
             print("The password or email is incorrect.")
-
-#Child Class Employee
+#Child Class
 class Employee(User):
     base_pay = 11.00
     department = 'General'
-    pin_number = "3980"
-
-# This is the same method in the parent class "User".
-# The difference is that, instead of using entry_password, we're using entry_pin.
-
+    pin_number = ""
+#Child Class method utilizing the parent class
     def getLoginInfo(self):
-        entry_name = input("Enter your name: ")
-        entry_email = input("Enter your email: ")
-        entry_pin = input("Enter your pin: ")
+        entry_name = input("Enter your name:")
+        entry_email = input ("Enter your email: ")
+        entry_pin = input ("Enter your pin: ")
         if (entry_email == self.email and entry_pin == self.pin_number):
             print("Welcome back, {}".format(entry_name))
         else:
             print("The pin or email is incorrect.")
-#The following code invokes the methods inside each class for User and Employee.
+#Child Class
+class Boss(User):
+     management = ""
+     account_number = ''
+#Child Class method utilizing the parent class
+     def getLoginInfo(self):
+            entry_name = input("Enter your name:")
+            entry_email = input ("Enter your email: ")
+            entry_account = input("Enter your account number: ")
+            if (entry_email ==self.email and entry_account == self.account_number):
+                print("Welcome back, {}".format(entry_name))
+            else:
+                print("The account number is incorrect. ")
+#Calling the functions to run the program
 customer = User()
 customer.getLoginInfo()
 
 manager = Employee()
 manager.getLoginInfo()
+
+owner = Boss()
+owner.getLoginInfo()
