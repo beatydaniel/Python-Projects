@@ -1,5 +1,5 @@
 class Protected:
-    #sets the private variable to 5 and creates a protected variable
+    #sets the private variable to 5 and creates a protected variable set to 0
     def __init__(self):
         self.__privateVar = 5
         self._protectedVar = 0
