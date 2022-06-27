@@ -4,10 +4,10 @@ class Protected:
         self.__privateVar = 5
         self._protectedVar = 0
         
-    def getPrivate(self):            #function that prints out the private variable
+    def getPrivate(self): #function that prints out the private variable
         print(self.__privateVar)
         
-    def getProtected(self):         #function that prints out the protected variable
+    def getProtected(self): #function that prints out the protected variable
         print(self._protectedVar)
 
     def setProtected(self,protected): #sets the protected variable to be a new value
