@@ -37,8 +37,8 @@ class window(Frame):
             self.e2.insert(0,filepath) #inserts the directory info into the textbox
 
         def check(self):
-            source = 'FolderA/'
-            destination = 'FolderB/'
+            source = self.e1.get() #gets whats inside the entry1
+            destination = self.e2.get() #gets whats inside the entry2
             files = os.listdir(source) #gets whats inside the directory
 
             for i in files:
@@ -47,7 +47,7 @@ class window(Frame):
                 filemodtime = os.path.getmtime(filepath) #gets the time of the source directory
                 filemodification = datetime.datetime.fromtimestamp(filemodtime) #collects the modification time from the
                 if  twentyfour < filemodification : #sets it to only transfer files that are less than 24hours
-                    shutil.copy(source+i,destination) #copies the files from the sourse directory to the destination directory
+                    shutil.copy(filepath,destination) #copies the files from the sourse directory to the destination directory
             
 def main():
     window().mainloop()
