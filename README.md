@@ -15,4 +15,3 @@ This project allows the user to choose to transfer all .txt files from one chose
 All files that are moved will be saved in a database.
 
 
-
