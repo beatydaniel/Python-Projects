@@ -1,10 +1,10 @@
 # Python Projects
  Projects created using Python, using various modules such as tkinter or sqlite3
 
-##Project:
+## Project:
 ###PhoneBook
 <br>
-###Check Files Gui
+### Check Files Gui
 
 * [PhoneBook](https://github.com/beatydaniel/Python-Projects/tree/main/Phonebook_Project)
 
