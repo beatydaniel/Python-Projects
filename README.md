@@ -1,7 +1,7 @@
 # Python Projects
  Projects created using Python, using various modules such as tkinter or sqlite3
 
-## Project:
+## Projects:
 PhoneBook
 <br>
 Check Files Gui
