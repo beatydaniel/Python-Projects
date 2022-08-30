@@ -1,10 +1,10 @@
 # Python Projects
- Projects created using Python, using various modules such as tkinter or sqlite3
+ <h3>Projects created using Python, using various modules such as tkinter or sqlite3</h3>
+ <br>  
 
-## Projects:
-PhoneBook
-<br>
-Check Files Gui
+* [Live Project](https://github.com/beatydaniel/Python-Live-Project)
+
+A two week sprint where we used Python with the Django Framework to develop websites. We Used Agile Methodolgies and daily Scrums. I learned how to work with a team of developers and how to utilize version control by branching and making pull requests with master.I learned front end and back end development and also how to render API data to my templates.
 
 * [PhoneBook](https://github.com/beatydaniel/Python-Projects/tree/main/Phonebook_Project)
 
